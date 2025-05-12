@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lägg till erfarenhet</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="icon" type="image/x-icon" href="/cv.ico">
+</head>
+<body>
+  <nav>
+    <a href="/">Startsida</a>
+    <a href="/add.html">Lägg till</a>
+    <a href="/about.html">Om</a>
+  </nav>
+  <main>
+    <h1>Lägg till i CV-listan</h1>
+    <form id="work-form">
+      <label for="companyname">Företagsnamn:</label>
+      <input id="companyname" name="companyname" required />
+
+      <label for="jobtitle">Arbetsuppgift:</label>
+      <input id="jobtitle" name="jobtitle" required />
+
+      <label for="location">Plats:</label>
+      <input id="location" name="location" required />
+
+      <label for="startdate">Inledningsdatum:</label>
+      <input id="startdate" name="startdate" type="date" required />
+
+      <label for="enddate">Avgångsdatum:</label>
+      <input id="enddate" name="enddate" type="date" />
+
+      <label for="description">Beskrivning:</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <button type="submit">Lägg till</button>
+    </form>
+    <script type="module" src="/src/add.ts"></script>
+  </main>
+</body>
+</html>

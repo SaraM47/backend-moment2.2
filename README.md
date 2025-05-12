@@ -4,11 +4,9 @@
 
 Denna webbapplikation är publicerad via Netlify för att fungera oberoende av backendmiljön som körs på Render. Detta möjliggör en tydlig separation mellan frontend och backend, vilket speglar hur moderna webbsystem ofta är uppbyggda.
 
-- [Frontend (Netlify):] (https://backend-moment22.netlify.app/)
-
-- [Backend (live-API):] (https://backend-moment2-1-ga1k.onrender.com/)
-
-- [Källkod för backend (GitHub):] (https://github.com/SaraM47/backend-moment2.1)
+- [Frontend (Netlify)](https://backend-moment22.netlify.app/)
+- [Backend (live-API)](https://backend-moment2-1-ga1k.onrender.com/)
+- [Källkod för backend (GitHub)](https://github.com/SaraM47/backend-moment2.1)
 
 ---
 

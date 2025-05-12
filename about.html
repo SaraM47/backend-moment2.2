@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Om sidan</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="icon" type="image/x-icon" href="/cv.ico" />
+</head>
+<body>
+  <nav>
+    <a href="/">Startsida</a>
+    <a href="/add.html">Lägg till</a>
+    <a href="/about.html">Om</a>
+  </nav>
+  <main class="about-page">
+    <h1>Om denna webbplats</h1>
+    <section>
+        <h2>Beskrivning</h2>
+        <p>
+          Syftet med denna webbplats är att ge användare möjlighet att spara och hantera arbetserfarenheter i ett CV-liknande format.
+          Applikationen är uppdelad i två delar – ett REST-baserat backend-API och en fristående frontend-applikation.
+        </p>
+        <p>
+          REST-API:t är utvecklat med <strong>Node.js</strong> och <strong>Express</strong> och publicerat via <strong>Render</strong>.
+          Det hanterar CRUD-operationer mot en relationsdatabas (<strong>PostgreSQL</strong>), där varje post innehåller företagsnamn,
+          arbetsroll, plats, startdatum, slutdatum samt en beskrivning.
+        </p>
+        <p>
+          Frontend-applikationen är byggd med <strong>Vite</strong> och <strong>TypeScript</strong>, och använder <strong>Fetch API</strong>
+          för att kommunicera med backend. Den är helt frikopplad från servermiljön och består av tre undersidor:
+        </p>
+        <ul>
+          <li><strong>Startsidan</strong> visar alla erfarenheter i en responsiv tabell med möjlighet att radera poster.</li>
+          <li><strong>Lägg till-sidan</strong> innehåller ett validerat formulär för att lägga till nya erfarenheter.</li>
+          <li><strong>Om-sidan</strong> beskriver applikationens syfte och tekniska struktur.</li>
+        </ul>
+        <p>
+          Extra fokus har lagts på tydlig kodstruktur, tillgänglighet (bland annat genom korrekt användning av <code>&lt;label&gt;</code>-taggar),
+          responsiv design samt feedback till användaren vid fel eller lyckad åtgärd.
+        </p>
+      </section>
+  
+      <section>
+        <h2>Slutsats</h2>
+        <p>
+          Detta moment gav en tydlig förståelse för hur frontend och backend kommunicerar via Fetch och HTTP-metoder som GET, POST och DELETE.
+          Det blev också uppenbart hur viktigt det är med en konsekvent API-struktur och tydlig felhantering, både på klient- och serversidan.
+        </p>
+        <p>
+          Att arbeta med PostgreSQL jämfört med SQLite (som användes i labb 1) visade på flera skillnader.
+          PostgreSQL krävde en mer explicit och strukturerad konfiguration, särskilt när det gäller anslutning via miljövariabler
+          och hantering av fjärrdatabaser. Samtidigt upplevdes PostgreSQL som mer skalbar och robust, särskilt i en produktionsliknande miljö som Render.
+        </p>
+        <p>
+          SQLite var å andra sidan mycket enkel att komma igång med – filbaserad och direkt integrerad – vilket passade bra för en lokal utvecklingsmiljö.
+          Men när applikationen behövde publiceras och hantera data från flera användare i en webbtjänst, kändes PostgreSQL som ett naturligare
+          och mer professionellt alternativ.
+        </p>
+        <p>
+          Sammantaget var detta moment mycket lärorikt. Jag fick använda moderna frontendverktyg som Vite och TypeScript,
+          samtidigt som jag skapade ett verkligt REST-API med koppling till en relationsdatabas.
+          Kombinationen av teknik och tydlig struktur gör detta till ett moment med direkt relevans för verkliga webbutvecklingsprojekt.
+        </p>
+      </section>
+  </main>
+</body>
+</html>
